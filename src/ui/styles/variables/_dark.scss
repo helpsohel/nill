@@ -1,0 +1,47 @@
+html[data-theme="dark"] {
+  color-scheme: dark;
+  @include dark; // including palette variables
+
+  // Application ============
+
+  --color-primary: rgba(var(--blue-5), 1);
+
+  --color-text-0: #9ca3af;
+  --color-text-1: #d1d6dd;
+
+  --color-text-heading: #f3f4f6;
+
+  --color-background: #000000;
+  --color-inverse-background: #f6f8fb;
+
+  --color-surface-0: #121212;
+  --color-surface-1: #0e0e0e;
+  --color-surface-2: #171717;
+  --color-surface-3: #151515;
+
+
+  --color-muted: #94a3b8; 
+
+  --color-accent: #aa3bff;
+  --color-accent-background: rgba(170, 59, 255, 0.1);
+  --color-accent-border: rgba(170, 59, 255, 0.5);
+
+  --color-scrollbar-track: #212121;
+  --color-scrollbar-thumb: #555;
+
+  // More ==========>
+  --color-focus-border: rgba(var(--blue-5), 1);
+  --color-shadow: rgba(var(--black), .04);
+
+  --color-link: rgba(var(--blue-5), 1); 
+  --color-link-hover: rgba(var(--blue-6), 1);
+  --color-link-active: rgba(var(--blue-7), 1); 
+  --color-link-visited: rgba(var(--blue-5), 1);
+
+  --color-border: rgba(var(--grey-9), 0.08);
+  --color-overlay-background: rgba(22, 22, 26, .6);
+
+  --color-highlight-background: rgba(var(--yellow-4), 1); 
+
+
+}

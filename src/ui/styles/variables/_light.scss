@@ -1,0 +1,88 @@
+:root {
+  /* --effect-parent-element/child identity */
+  color-scheme: light;
+  @include light; // including palette variables
+
+  // Application  ====================
+
+  --color-primary: rgba(var(--blue-5), 1);
+  --color-primary-hover: rgba(var(--blue-6), 1);
+  --color-primary-active: rgba(var(--blue-7), 1);
+  --color-primary-disabled: rgba(var(--blue-2), 1);
+
+  --color-secondary: rgba(var(--light-blue-5), 1);
+  --color-secondary-hover: rgba(var(--light-blue-6), 1);
+  --color-secondary-active: rgba(var(--light-blue-7), 1);
+  --color-secondary-disabled: rgba(var(--light-blue-2), 1);
+
+  --color-tertiary: rgba(var(--grey-5), 1);
+  --color-tertiary-hover: rgba(var(--grey-6), 1);
+  --color-tertiary-active: rgba(var(--grey-7), 1);
+
+  --color-default: rgba(var(--grey-0), 1);
+  --color-default-hover: rgba(var(--grey-1), 1);
+  --color-default-active: rgba(var(--grey-2), 1);
+
+  
+  --color-danger: rgba(var(--red-5), 1);
+  --color-danger-hover: rgba(var(--red-6), 1);
+  --color-danger-active: rgba(var(--red-7), 1);
+  
+  --color-warning: rgba(var(--orange-5), 1);
+  --color-warning-hover: rgba(var(--orange-6), 1);
+  --color-warning-active: rgba(var(--orange-7), 1);
+  
+  --color-info: rgba(var(--blue-5), 1);
+  --color-info-hover: rgba(var(--blue-6), 1);
+  --color-info-active: rgba(var(--blue-7), 1);
+  --color-info-disabled: rgba(var(--blue-2), 1);
+
+  --color-success: rgba(var(--green-5), 1);
+  --color-success-hover: rgba(var(--green-6), 1); 
+  --color-success-active: rgba(var(--green-7), 1);
+  --color-success-disabled: rgba(var(--green-2), 1);
+
+  --color-focus-border: rgba(var(--blue-5), 1);
+  --color-shadow: rgba(var(--black), .04);
+
+  --color-disabled-text: rgba(var(--grey-9), .35);
+  --color-disabled-border: rgba(var(--grey-1), 1);
+  --color-disabled-background: rgba(var(--grey-1), 1);
+
+  --color-link: rgba(var(--blue-5), 1); 
+  --color-link-hover: rgba(var(--blue-6), 1);
+  --color-link-active: rgba(var(--blue-7), 1); 
+  --color-link-visited: rgba(var(--blue-5), 1);
+
+  --color-border: rgba(var(--grey-9), .08);
+  --color-overlay-background: rgba(22, 22, 26, .6);
+
+  --color-highlight-background: rgba(var(--yellow-4), 1); 
+  
+  --color-text-0: rgba(var(--grey-9), 1); // Text/icon color - most important
+  --color-text-1: rgba(var(--grey-9), .8); // Text/icon color - less important
+  --color-text-2: rgba(var(--grey-9), .62); // Text/icon color - minor 
+  --color-text-3: rgba(var(--grey-9), .35); // Text/icon color - least important
+
+  // Legacy  ==========>
+  --color-text-heading: #08060d;
+  
+  --color-background: #f6f8fb;
+  --color-inverse-background: #000000;
+
+  --color-surface-0: #ffffff;
+  --color-surface-1: #f6f6f6;
+  --color-surface-2: #f8f8f8;
+  --color-surface-3: #f7f7f7;
+
+  // --color-border: #e2e8f0;
+  --color-muted: #475569;
+
+  --color-accent: #aa3bff;
+  --color-accent-background: rgba(170, 59, 255, 0.1);
+  --color-accent-border: rgba(170, 59, 255, 0.5);
+
+  --color-scrollbar-track: #f5f5f5;
+  --color-scrollbar-thumb: #c7c7c7;
+
+}

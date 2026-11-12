@@ -1,0 +1,96 @@
+@import './palette';
+@import './_light.scss'; // default :root class
+@import './_dark.scss';
+
+:root { // Global/default variables
+   --font-family-regular: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   --mono: ui-monospace, Consolas, monospace;
+
+  --color-white: rgb(255,255,255); 
+  --color-black: rgb(0,0,0);
+  
+  --color-success: #16a34a;
+  --color-danger: #dc2626;
+
+  /* z-index */
+  --z-portal: 1;
+  --z-affix: 10;
+  --z-backtop: 10;
+  --z-badge: 10;
+  /* --z-avatar-default: 100; */
+  --z-table-fixed: 101;
+  --z-modal: 1000;
+  --z-modal-mask: 1000;
+
+  --z-toast: 1010;
+  --z-notification: 1010;
+  --z-popover: 1030;
+  --z-dropdown: 1050;
+  --z-tooltip: 1060;
+
+  --z-image_preview: 1070;
+  --z-image_preview_header: 1;
+
+  --z-transfer_right_item_drag_item_move: 2000;
+  --z-tagInput_drag_item_move: 2000;
+  --z-resizable_handler: 10;
+  /* --z-resizable_background: 2010; */
+
+  --font-size-small: 12px; 
+  --font-size-regular: 14px; 
+
+  --font-size-heading-6: 16px;
+  --font-size-heading-5: 18px;
+  --font-size-heading-4: 20px;
+  --font-size-heading-3: 24px;
+  --font-size-heading-2: 28px;
+  --font-size-heading-1: 32px;
+
+  --font-weight-light: 200; 
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+
+    // Border radius
+  --border-radius-small: 3px; //  button、tag、tabs 
+  --border-radius-medium: 6px; // dropdown、scrollist、transfer 
+  --border-radius-large: 12px; //  modal
+  --border-radius-round: 20px; //  rounded
+  --border-radius-circle: 50%; // avatar, badge
+  --border-radius-full: 9999px; // capsul make
+
+  // fill color
+    --color-fill-0: rgba(var(--grey-8), .07); 
+    --color-fill-1: rgba(var(--grey-8), .11); 
+    --color-fill-2: rgba(var(--grey-8), .15);
+
+  // spacing --space-n: 4*n;
+  --space-0: 0;
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* sizing */
+  --height-control-small: 24px; // input field
+  --height-control-default: 32px; // input field
+  --height-control-large: 40px;
+
+  --width-icon-extra-small: 8px;
+  --width-icon-small: 12px; 
+  --width-icon-medium: 16px; 
+  --width-icon-large: 20px;
+  --width-icon-extra-large: 24px;
+  
+  --border-thickness: 0;
+  --border-thickness-control: 1px; //checkbox
+  --border-thickness-control-focus: 1px; // - focus（checkbox)
+}

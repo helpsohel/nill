@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nill</title>
+
+        <meta name="color-scheme" content="light dark" />
+
+    <script>
+      (() => {
+        const STORAGE_KEY = "company-theme";
+
+        let theme = "system";
+
+        try {
+          const savedTheme = localStorage.getItem(STORAGE_KEY);
+
+          if (
+            savedTheme === "light" ||
+            savedTheme === "dark" ||
+            savedTheme === "system"
+          ) {
+            theme = savedTheme;
+          }
+        } catch {
+          // Use system preference if storage is unavailable.
+        }
+
+        const resolvedTheme =
+          theme === "system"
+            ? window.matchMedia(
+                "(prefers-color-scheme: dark)"
+              ).matches
+              ? "dark"
+              : "light"
+            : theme;
+
+        document.documentElement.setAttribute(
+          "data-theme",
+          resolvedTheme
+        );
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
